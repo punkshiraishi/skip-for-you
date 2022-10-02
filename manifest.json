@@ -1,13 +1,10 @@
 {
-  "name": "mini-ext",
-  "description": "mini-ext",
+  "name": "Skip for You",
+  "description": "Click Skip Ad Button for You",
   "version": "1.0",
   "manifest_version": 3,
-  "action": {
-    "default_popup": "popup.html"
-  },
-  "background": {
-    "service_worker": "background.js"
+  "icons": {
+    "128": "assets/icon128.png"
   },
   "content_scripts": [
     {
@@ -15,9 +12,8 @@
         "content.js"
       ],
       "matches": [
-        "https://*/*"
+        "https://youtube.com/*"
       ]
     }
-  ],
-  "permissions": ["tabs"]
+  ]
 }
